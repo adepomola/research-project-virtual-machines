@@ -638,3 +638,95 @@ AWS Outposts extends AWS infrastructure and services into on-premises data cente
 ## Summary
 
 Hybrid cloud deployments combine the strengths of on-premises infrastructure and cloud computing. Although managing multiple environments introduces additional complexity, automation, centralized management, and strong security practices enable DevOps teams to build scalable, flexible, and reliable virtual machine environments.
+---
+
+# 7. Monitoring and Alerting
+
+## What Are the Essential Metrics and Monitoring Tools for Tracking the Health and Performance of Virtual Machines in a DevOps Pipeline?
+
+Monitoring is a critical practice in DevOps because it provides real-time visibility into the health, performance, and availability of virtual machines. Continuous monitoring helps teams identify performance issues, optimize resource usage, and respond quickly to failures before they affect users.
+
+## Essential Performance Metrics
+
+The following metrics should be monitored regularly to ensure virtual machines are operating efficiently.
+
+### CPU Usage
+
+CPU usage measures the percentage of processor resources being consumed. High CPU utilization over an extended period may indicate that a virtual machine requires additional resources or optimization.
+
+### Memory Utilization
+
+Monitoring memory usage helps identify memory shortages that may slow applications or cause system instability.
+
+### Disk Input/Output (Disk I/O)
+
+Disk I/O measures how quickly data is read from and written to storage devices. Poor disk performance can negatively affect application responsiveness.
+
+### Disk Space
+
+Available disk space should be monitored to prevent service interruptions caused by full storage volumes.
+
+### Network Latency
+
+Network latency measures the time required for data to travel between systems. High latency may affect communication between applications and services.
+
+### Network Throughput
+
+Network throughput measures the amount of data transferred over a network during a given period. It helps identify bandwidth limitations.
+
+## Monitoring Tools
+
+### Prometheus
+
+Prometheus is an open-source monitoring and alerting system that collects performance metrics from servers, applications, and virtual machines.
+
+### Grafana
+
+Grafana provides dashboards that visualize monitoring data collected from tools such as Prometheus, making it easier to analyze system performance.
+
+### Nagios
+
+Nagios monitors infrastructure components and sends alerts when predefined thresholds are exceeded.
+
+### New Relic
+
+New Relic is a cloud-based observability platform that provides application performance monitoring, infrastructure monitoring, and analytics.
+
+## Automated Alerting
+
+Automated alerting enables DevOps teams to respond quickly when system performance falls outside acceptable limits.
+
+Examples of alert conditions include:
+
+- High CPU usage
+- Low available memory
+- Low disk space
+- High network latency
+- Virtual machine downtime
+
+## Alerting Tools
+
+### Zabbix
+
+Zabbix provides infrastructure monitoring with customizable alerts based on user-defined thresholds.
+
+### Datadog
+
+Datadog offers cloud monitoring, log management, and intelligent alerting for virtual machines and applications.
+
+### PagerDuty
+
+PagerDuty integrates with monitoring tools to notify the appropriate team members during incidents, helping reduce response times.
+
+## Best Practices
+
+- Monitor infrastructure continuously.
+- Configure meaningful alert thresholds.
+- Avoid excessive alert notifications.
+- Review monitoring dashboards regularly.
+- Test alerting systems periodically.
+- Integrate monitoring with CI/CD pipelines.
+
+## Summary
+
+Monitoring and alerting help maintain healthy and reliable virtual machine environments. By tracking critical performance metrics and using automated alerts, DevOps teams can detect issues early, reduce downtime, and improve the overall stability of applications and infrastructure.
