@@ -125,6 +125,7 @@ Containerization packages applications and their dependencies into lightweight c
 - Rapid application deployment.
 - Cloud-native applications.
 - DevOps automation.
+---
 
 # 2. Performance Optimization
 
@@ -242,3 +243,91 @@ Although Kubernetes is primarily designed for containers, it can also work along
 ## Summary
 
 Performance optimization is an ongoing process in DevOps. By properly allocating CPU, memory, storage, and network resources, organizations can maximize VM performance while reducing operational costs. Techniques such as monitoring, resource throttling, overcommitting, and automation help maintain reliable and efficient virtualized environments.
+---
+
+# 3. Infrastructure as Code (IaC)
+
+## How Does Infrastructure as Code (IaC) Impact Virtual Machine Provisioning and Management?
+
+Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure using code instead of manual processes. In DevOps, IaC enables teams to create, configure, and manage virtual machines consistently and automatically. This reduces human error, speeds up deployments, and ensures that infrastructure can be reproduced whenever needed.
+
+Popular IaC tools include Terraform, Ansible, and AWS CloudFormation. These tools allow infrastructure configurations to be stored in version control systems such as Git, making collaboration and change tracking much easier.
+
+## Terraform
+
+Terraform is an open-source Infrastructure as Code tool developed by HashiCorp. It allows DevOps teams to provision infrastructure across multiple cloud providers using declarative configuration files.
+
+### Advantages
+
+- Supports multiple cloud providers.
+- Automates VM provisioning.
+- Stores infrastructure as code.
+- Easy to integrate with CI/CD pipelines.
+- Reduces manual configuration errors.
+
+### Limitations
+
+- Requires learning its configuration language.
+- Debugging configuration issues can be challenging.
+
+## Ansible
+
+Ansible is an automation tool used for configuration management, application deployment, and infrastructure automation. It uses simple YAML playbooks and does not require agents on managed machines.
+
+### Advantages
+
+- Easy to learn.
+- Agentless architecture.
+- Automates server configuration.
+- Works well with virtual machines and cloud environments.
+
+### Limitations
+
+- Less suitable for complex infrastructure provisioning than Terraform.
+- Performance may decrease when managing very large environments.
+
+## AWS CloudFormation
+
+AWS CloudFormation is Amazon Web Services' native Infrastructure as Code service. It allows users to define and deploy AWS resources using JSON or YAML templates.
+
+### Advantages
+
+- Deep integration with AWS services.
+- Automates resource provisioning.
+- Supports version-controlled templates.
+- Simplifies infrastructure management.
+
+### Limitations
+
+- Limited to AWS environments.
+- Templates can become complex in large deployments.
+
+## Integration with Cloud Platforms
+
+IaC tools integrate seamlessly with cloud platforms such as AWS, Microsoft Azure, and Google Cloud Platform. They automate the creation of virtual machines, networking, storage, and security configurations, allowing infrastructure to be deployed consistently across different environments.
+
+## Benefits of Infrastructure as Code
+
+- Faster infrastructure deployment.
+- Improved consistency.
+- Reduced human error.
+- Easier collaboration among DevOps teams.
+- Version control for infrastructure.
+- Better scalability.
+- Simplified disaster recovery.
+
+## Challenges of Using IaC
+
+- Steep learning curve for beginners.
+- Configuration files can become complex.
+- Debugging automation issues may be difficult.
+- Security risks if sensitive information is stored improperly.
+- Requires ongoing maintenance as infrastructure evolves.
+
+## IaC in DevOps Pipelines
+
+Infrastructure as Code plays an important role in CI/CD pipelines by automating infrastructure provisioning before application deployment. This ensures that development, testing, staging, and production environments remain consistent, reducing deployment failures and improving software delivery speed.
+
+## Summary
+
+Infrastructure as Code has transformed the way DevOps teams manage virtual machines. By automating infrastructure provisioning and configuration, organizations achieve faster deployments, improved consistency, greater scalability, and more reliable environments. Although IaC introduces a learning curve, its long-term benefits far outweigh the initial challenges.
